@@ -1,0 +1,255 @@
+{
+  "HomePage": {
+    "badge": "Tours Premium",
+    "title": "Descubre el Ecuador",
+    "subtitle": "Una aventura de clase mundial en el centro del planeta",
+    "about": "Nosotros",
+    "destinations": "Destinos",
+    "contact": "Contacto",
+    "hotels": "Hoteles Asociados",
+    "tours": "Nuestros Planes"
+  },
+  "About": {
+    "title": "Nuestra Filosofía de Viaje",
+    "description": "No vendemos paquetes turísticos, creamos recuerdos para toda la vida. Creemos en un turismo que conecta profundamente con la esencia de Ecuador, respetando su naturaleza y celebrando su cultura viva.",
+    "cta": "¿Listo para comenzar tu propia historia?",
+    "cta_button": "Explorar Destinos",
+    "experts_title": "Expertos Locales",
+    "experts_desc": "Conocemos cada rincón de Ecuador, desde las cumbres de los Andes hasta Galápagos.",
+    "security_title": "Seguridad Garantizada",
+    "security_desc": "Trabajamos con los mejores hoteles y guías certificados para garantizar tu bienestar.",
+    "unique_title": "Experiencias Únicas",
+    "unique_desc": "Itinerarios personalizados que te dejarán sin aliento y con recuerdos exclusivos."
+  },
+  "Destinations": {
+    "view_plans": "Explorar experiencias →",
+    "galapagos": {
+      "name": "Islas Galápagos",
+      "tag": "Naturaleza Auténtica",
+      "description": "Navega archipiélagos volcánicos prístinos y nada junto a las especies endémicas que inspiraron a Darwin. El paraíso salvaje garantizado."
+    },
+    "quito": {
+      "name": "Quito Histórico",
+      "tag": "Patrimonio Cultural",
+      "description": "Recorre calles empedradas, cúpulas doradas y pisa la línea Ecuatorial. La capital colonial mejor conservada de los Andes."
+    },
+    "amazon": {
+      "name": "Selva Amazónica",
+      "tag": "Aventura Profunda",
+      "description": "Despierta entre la inmensidad verde en el corazón del Pulmón del Mundo. Expediciones inmersivas en el bosque lluvioso."
+    },
+    "banos": {
+      "name": "Baños de Agua Santa",
+      "tag": "Adrenalina Pura",
+      "description": "Desciende por cascadas atronadoras y relájate a los pies del volcán Tungurahua. La meca absoluta del turismo activo."
+    }
+  },
+  "Hotels": {
+    "casagangotena": {
+      "name": "Casa Gangotena",
+      "location": "Quito",
+      "description": "Un hotel boutique de lujo situado en la histórica Plaza San Francisco."
+    },
+    "finchbay": {
+      "name": "Finch Bay Spa",
+      "location": "Galápagos",
+      "description": "Hotel ecológico premium con acceso directo a la playa en Puerto Ayora."
+    },
+    "mashpilodge": {
+      "name": "Mashpi Lodge",
+      "location": "Bosque Nublado",
+      "description": "Un refugio de cristal inmerso en la densa selva del Chocó andino."
+    }
+  },
+  "Tours": {
+    "includes": "Incluye",
+    "excludes": "No Incluye",
+    "consult": "Consultar Plan",
+    "view_detail": "Ver detalle del plan",
+    "close": "Cerrar",
+    "modal_itinerary": "Itinerario por días",
+    "modal_lodging": "Hospedaje asociado",
+    "modal_activities": "Actividades principales",
+    "galapagos-explorer": {
+      "name": "Galápagos Explorer",
+      "duration": "5 Días / 4 Noches",
+      "description": "Descubre la evolución en su máxima expresión explorando las islas encantadas.",
+      "inclusions": [
+        "Alojamiento premium",
+        "Desayunos",
+        "Snorkel",
+        "Guía Naturalista"
+      ],
+      "exclusions": [
+        "Vuelos",
+        "Entrada al Parque Nacional"
+      ],
+      "lodging": "Finch Bay Spa u hotel categoría Primera",
+      "activities": [
+        "Observación de fauna endémica",
+        "Snorkel con tortugas marinas",
+        "Caminatas volcánicas"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Llegada a Baltra",
+          "description": "Recepción en aeropuerto y traslado a Santa Cruz."
+        },
+        {
+          "day": "2",
+          "title": "Tour Islote Navío",
+          "description": "Día completo de navegación y vida marina."
+        },
+        {
+          "day": "3",
+          "title": "Tortuga Bay",
+          "description": "Caminata por sendero de iguanas hacia playa de arena blanca."
+        },
+        {
+          "day": "4",
+          "title": "Tierras Altas",
+          "description": "Visita rancho de tortugas gigantes en estado salvaje."
+        },
+        {
+          "day": "5",
+          "title": "Retorno",
+          "description": "Traslado al aeropuerto para vuelo internacional."
+        }
+      ]
+    },
+    "quito-historical": {
+      "name": "Quito y Mitad del Mundo",
+      "duration": "3 Días / 2 Noches",
+      "description": "Sumérgete en la historia viva de la capital y pisa ambos hemisferios.",
+      "inclusions": [
+        "Hotel céntrico",
+        "Transporte privado",
+        "Entradas a museos"
+      ],
+      "exclusions": [
+        "Almuerzos libres",
+        "Propinas"
+      ],
+      "lodging": "Casa Gangotena o similar",
+      "activities": [
+        "Recorrido histórico guiado",
+        "Visita al monumento Ecuatorial",
+        "Degustación de chocolate"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Llegada",
+          "description": "Check-in y tarde libre en Centro Histórico."
+        },
+        {
+          "day": "2",
+          "title": "City Tour",
+          "description": "Visita a la Basílica, Compañía de Jesús y Panecillo."
+        },
+        {
+          "day": "3",
+          "title": "Mitad del Mundo",
+          "description": "Experiencias en el paralelo 0° y retorno."
+        }
+      ]
+    },
+    "amazon-adventure": {
+      "name": "Aventura Amazónica",
+      "duration": "4 Días / 3 Noches",
+      "description": "Desconexión total en lo profundo de la selva del Napo.",
+      "inclusions": [
+        "Lodge ecológico",
+        "Alimentación completa",
+        "Excursiones en canoa"
+      ],
+      "exclusions": [
+        "Bebidas alcohólicas",
+        "Botas de caucho personales"
+      ],
+      "lodging": "Mashpi Lodge o Lodge Nativo",
+      "activities": [
+        "Caminatas nocturnas",
+        "Observación de aves",
+        "Visita a comunidad indígena"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Ingreso a la Selva",
+          "description": "Viaje en canoa motorizada hasta el lodge."
+        },
+        {
+          "day": "2",
+          "title": "Dosel y Vida Salvaje",
+          "description": "Ascenso a la torre de observación y senderismo."
+        },
+        {
+          "day": "3",
+          "title": "Cultura Local",
+          "description": "Interacción con familias nativas del Napo."
+        },
+        {
+          "day": "4",
+          "title": "Salida",
+          "description": "Retorno río arriba a la ciudadela."
+        }
+      ]
+    },
+    "banos-extreme": {
+      "name": "Baños Extremo",
+      "duration": "3 Días / 2 Noches",
+      "description": "Adrenalina pura en la capital de la aventura andina.",
+      "inclusions": [
+        "Alojamiento turístico",
+        "Equipos de seguridad",
+        "Guías expertos"
+      ],
+      "exclusions": [
+        "Fotografías profesionales",
+        "Comidas no especificadas"
+      ],
+      "lodging": "Luna Volcán o equivalente",
+      "activities": [
+        "Rafting",
+        "Canyoning",
+        "Ruta de las cascadas en bicicleta"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Ruta de Cascadas",
+          "description": "Recorrido en bici hasta el Pailón del Diablo."
+        },
+        {
+          "day": "2",
+          "title": "Deportes Extremos",
+          "description": "Mañana de Rafting y tarde de Canyoning."
+        },
+        {
+          "day": "3",
+          "title": "Relajación",
+          "description": "Mañana en aguas termales antes de partir."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "links": "Enlaces Rápidos",
+    "rights": "Todos los derechos reservados."
+  },
+  "Contact": {
+    "ready": "¿Listo para viajar?",
+    "ready_desc": "Cotiza tu paquete ideal con nuestros asesores. Te responderemos en menos de 24 horas laborables para que puedas comenzar tu aventura en Ecuador.",
+    "email": "Correo Electrónico",
+    "chat": "Chat en WhatsApp",
+    "form_name_label": "Nombre completo",
+    "form_name_placeholder": "Tu nombre",
+    "form_email_label": "Correo electrónico",
+    "form_email_placeholder": "tu@correo.com",
+    "form_msg_label": "Mensaje o Plan de interés",
+    "form_msg_placeholder": "¿Qué destinos te gustaría visitar?",
+    "form_submit": "Enviar Mensaje"
+  }
+}

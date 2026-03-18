@@ -1,0 +1,255 @@
+{
+  "HomePage": {
+    "badge": "Premium Tours",
+    "title": "Discover Ecuador",
+    "subtitle": "A world-class adventure at the center of the earth",
+    "about": "About Us",
+    "destinations": "Destinations",
+    "contact": "Contact",
+    "hotels": "Partner Hotels",
+    "tours": "Our Tours"
+  },
+  "About": {
+    "title": "Our Travel Philosophy",
+    "description": "We don't sell tour packages, we craft lifetime memories. We believe in travel that connects deeply with the essence of Ecuador, respecting its nature and celebrating its living culture.",
+    "cta": "Ready to start your own story?",
+    "cta_button": "Explore Destinations",
+    "experts_title": "Local Experts",
+    "experts_desc": "We know every corner of Ecuador, from the Andean peaks to the Galapagos.",
+    "security_title": "Guaranteed Security",
+    "security_desc": "We work with top hotels and certified guides to ensure your well-being.",
+    "unique_title": "Unique Experiences",
+    "unique_desc": "Personalized itineraries that will leave you breathless with exclusive memories."
+  },
+  "Destinations": {
+    "view_plans": "Explore experiences →",
+    "galapagos": {
+      "name": "Galapagos Islands",
+      "tag": "Authentic Nature",
+      "description": "Sail pristine volcanic archipelagos and swim alongside endemic species that inspired Darwin. A guaranteed wild paradise."
+    },
+    "quito": {
+      "name": "Historic Quito",
+      "tag": "Cultural Heritage",
+      "description": "Walk cobblestone streets, golden domes and step on the Equatorial line. The best preserved colonial capital in the Andes."
+    },
+    "amazon": {
+      "name": "Amazon Rainforest",
+      "tag": "Deep Adventure",
+      "description": "Wake up among the vast green immensity in the heart of the Lung of the World. Immersive rainforest expeditions."
+    },
+    "banos": {
+      "name": "Baños de Agua Santa",
+      "tag": "Pure Adrenaline",
+      "description": "Descend thunderous waterfalls and relax at the foot of the Tungurahua volcano. The absolute mecca of active tourism."
+    }
+  },
+  "Hotels": {
+    "casagangotena": {
+      "name": "Casa Gangotena",
+      "location": "Quito",
+      "description": "A luxury boutique hotel located in the historic San Francisco Plaza."
+    },
+    "finchbay": {
+      "name": "Finch Bay Spa",
+      "location": "Galapagos",
+      "description": "Premium eco-hotel with direct beach access in Puerto Ayora."
+    },
+    "mashpilodge": {
+      "name": "Mashpi Lodge",
+      "location": "Cloud Forest",
+      "description": "A glass refuge immersed in the dense jungle of the Andean Choco."
+    }
+  },
+  "Tours": {
+    "includes": "Included",
+    "excludes": "Not Included",
+    "consult": "Request info",
+    "view_detail": "View plan details",
+    "close": "Close",
+    "modal_itinerary": "Daily Itinerary",
+    "modal_lodging": "Associated lodging",
+    "modal_activities": "Main activities",
+    "galapagos-explorer": {
+      "name": "Galapagos Explorer",
+      "duration": "5 Days / 4 Nights",
+      "description": "Discover evolution at its finest exploring the enchanted islands.",
+      "inclusions": [
+        "Premium accommodation",
+        "Breakfasts",
+        "Snorkeling",
+        "Naturalist Guide"
+      ],
+      "exclusions": [
+        "Flights",
+        "National Park Entrance Fee"
+      ],
+      "lodging": "Finch Bay Spa or First Class hotel",
+      "activities": [
+        "Endemic wildlife observation",
+        "Snorkeling with sea turtles",
+        "Volcanic hikes"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Arrival at Baltra",
+          "description": "Airport reception and transfer to Santa Cruz."
+        },
+        {
+          "day": "2",
+          "title": "Navio Islet Tour",
+          "description": "Full day of navigation and marine life."
+        },
+        {
+          "day": "3",
+          "title": "Tortuga Bay",
+          "description": "Hike through iguana trail to white sand beach."
+        },
+        {
+          "day": "4",
+          "title": "Highlands",
+          "description": "Visit giant tortoise ranch in the wild."
+        },
+        {
+          "day": "5",
+          "title": "Return",
+          "description": "Transfer to airport for international flight."
+        }
+      ]
+    },
+    "quito-historical": {
+      "name": "Quito & Middle of the World",
+      "duration": "3 Days / 2 Nights",
+      "description": "Immerse yourself in the living history of the capital and step on both hemispheres.",
+      "inclusions": [
+        "Centrally located hotel",
+        "Private transportation",
+        "Museum entrances"
+      ],
+      "exclusions": [
+        "Free lunches",
+        "Gratuities"
+      ],
+      "lodging": "Casa Gangotena or similar",
+      "activities": [
+        "Guided historical tour",
+        "Visit to Equatorial monument",
+        "Chocolate tasting"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Arrival",
+          "description": "Check-in and free afternoon in Historic Center."
+        },
+        {
+          "day": "2",
+          "title": "City Tour",
+          "description": "Visit Basilica, Compania de Jesus and Panecillo."
+        },
+        {
+          "day": "3",
+          "title": "Middle of the World",
+          "description": "Experiences at parallel 0° and return."
+        }
+      ]
+    },
+    "amazon-adventure": {
+      "name": "Amazon Adventure",
+      "duration": "4 Days / 3 Nights",
+      "description": "Total disconnection deep in the Napo jungle.",
+      "inclusions": [
+        "Eco-lodge",
+        "Full board",
+        "Canoe excursions"
+      ],
+      "exclusions": [
+        "Alcoholic beverages",
+        "Personal rubber boots"
+      ],
+      "lodging": "Mashpi Lodge or Native Lodge",
+      "activities": [
+        "Night walks",
+        "Bird watching",
+        "Visit to indigenous community"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Jungle Entry",
+          "description": "Motorized canoe trip to the lodge."
+        },
+        {
+          "day": "2",
+          "title": "Canopy & Wildlife",
+          "description": "Ascent to observation tower and hiking."
+        },
+        {
+          "day": "3",
+          "title": "Local Culture",
+          "description": "Interaction with native families of Napo."
+        },
+        {
+          "day": "4",
+          "title": "Departure",
+          "description": "Return upriver to the citadel."
+        }
+      ]
+    },
+    "banos-extreme": {
+      "name": "Extreme Banos",
+      "duration": "3 Days / 2 Nights",
+      "description": "Pure adrenaline in the Andean adventure capital.",
+      "inclusions": [
+        "Tourist accommodation",
+        "Safety equipment",
+        "Expert guides"
+      ],
+      "exclusions": [
+        "Professional photography",
+        "Unspecified meals"
+      ],
+      "lodging": "Luna Volcan or equivalent",
+      "activities": [
+        "Rafting",
+        "Canyoning",
+        "Waterfall route by bike"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Waterfall Route",
+          "description": "Bike tour to Pailon del Diablo."
+        },
+        {
+          "day": "2",
+          "title": "Extreme Sports",
+          "description": "Morning Rafting and afternoon Canyoning."
+        },
+        {
+          "day": "3",
+          "title": "Relaxation",
+          "description": "Morning in hot springs before departing."
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "links": "Quick Links",
+    "rights": "All rights reserved."
+  },
+  "Contact": {
+    "ready": "Ready to travel?",
+    "ready_desc": "Quote your ideal package with our travel advisors. We will reply in less than 24 business hours so you can start your adventure in Ecuador.",
+    "email": "Email Address",
+    "chat": "Chat on WhatsApp",
+    "form_name_label": "Full Name",
+    "form_name_placeholder": "Your name",
+    "form_email_label": "Email Address",
+    "form_email_placeholder": "you@email.com",
+    "form_msg_label": "Message or Tour of interest",
+    "form_msg_placeholder": "Which destinations would you like to visit?",
+    "form_submit": "Send Message"
+  }
+}
