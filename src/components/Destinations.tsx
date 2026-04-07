@@ -4,6 +4,7 @@ import {useTranslations} from 'next-intl';
 import {motion} from 'framer-motion';
 import {destinations} from '@/data/destinations';
 import { MapPin } from 'lucide-react';
+import {Link} from '@/i18n/routing';
 
 export default function Destinations() {
   const t = useTranslations('Destinations');
@@ -56,9 +57,9 @@ export default function Destinations() {
                   <p className="text-slate-200 text-sm mb-6 line-clamp-2 transform group-hover:-translate-y-1 transition-transform duration-300 delay-75">
                     {t(`${dest.id}.description`)}
                   </p>
-                  <a href={`#tour-${dest.id}`} className="inline-flex items-center w-max gap-2 px-5 py-2.5 bg-white/10 backdrop-blur-md text-white text-sm font-bold rounded-full transition-all duration-300 border border-white/20 group-hover:bg-brand-green group-hover:border-brand-green group-hover:shadow-[0_8px_20px_-6px_var(--color-brand-green)] transform group-hover:-translate-y-1 delay-100">
+                  <Link href={`/tours?region=${dest.id}`} className="inline-flex items-center w-max gap-2 px-5 py-2.5 bg-white/10 backdrop-blur-md text-white text-sm font-bold rounded-full transition-all duration-300 border border-white/20 group-hover:bg-brand-green group-hover:border-brand-green group-hover:shadow-[0_8px_20px_-6px_var(--color-brand-green)] transform group-hover:-translate-y-1 delay-100">
                     {t('view_plans')}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>

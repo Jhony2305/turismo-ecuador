@@ -21,23 +21,23 @@ export default function Navbar() {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="text-slate-700 hover:text-brand-blue font-medium transition">
+            <Link href="/#about" className="text-slate-700 hover:text-brand-blue font-medium transition">
               {t('about')}
             </Link>
-            <Link href="#destinations" className="text-slate-700 hover:text-brand-blue font-medium transition">
+            <Link href="/#destinations" className="text-slate-700 hover:text-brand-blue font-medium transition">
               {t('destinations')}
             </Link>
-            <Link href="#hotels" className="text-slate-700 hover:text-brand-blue font-medium transition">
+            <Link href="/hotels" className="text-slate-700 hover:text-brand-blue font-medium transition">
               {t('hotels')}
             </Link>
-            <Link href="#tours" className="text-slate-700 hover:text-brand-blue font-medium transition">
+            <Link href="/tours" className="text-slate-700 hover:text-brand-blue font-medium transition">
               {t('tours')}
             </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
             <LanguageSwitcher />
-            <Link href="#contact" className="px-6 py-2.5 rounded-full bg-brand-blue text-white font-bold hover:bg-brand-blue-dark transition shadow-lg shadow-brand-blue/20">
+            <Link href="/#contact" className="px-6 py-2.5 rounded-full bg-brand-blue text-white font-bold hover:bg-brand-blue-dark transition shadow-lg shadow-brand-blue/20">
               {t('contact')}
             </Link>
           </div>
@@ -59,19 +59,19 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-t border-slate-100 absolute w-full left-0 p-4 shadow-xl z-50">
           <div className="flex flex-col space-y-4">
-            <Link href="#about" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
+            <Link href="/#about" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
               {t('about')}
             </Link>
-            <Link href="#destinations" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
+            <Link href="/#destinations" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
               {t('destinations')}
             </Link>
-            <Link href="#hotels" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
+            <Link href="/hotels" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
               {t('hotels')}
             </Link>
-            <Link href="#tours" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
+            <Link href="/tours" onClick={() => setIsOpen(false)} className="text-slate-700 font-medium px-4 py-3 hover:bg-slate-50 rounded-lg">
               {t('tours')}
             </Link>
-            <Link href="#contact" onClick={() => setIsOpen(false)} className="mx-4 text-center px-6 py-4 rounded-xl bg-brand-blue text-white font-bold shadow-lg shadow-brand-blue/20">
+            <Link href="/#contact" onClick={() => setIsOpen(false)} className="mx-4 text-center px-6 py-4 rounded-xl bg-brand-blue text-white font-bold shadow-lg shadow-brand-blue/20">
               {t('contact')}
             </Link>
           </div>

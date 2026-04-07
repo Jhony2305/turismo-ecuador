@@ -7,7 +7,7 @@
     "destinations": "Destinos",
     "contact": "Contacto",
     "hotels": "Hoteles Asociados",
-    "tours": "Nuestros Planes"
+    "tours": "Nuestros Tours"
   },
   "About": {
     "title": "Nuestra Filosofía de Viaje",
@@ -22,26 +22,26 @@
     "unique_desc": "Itinerarios personalizados que te dejarán sin aliento y con recuerdos exclusivos."
   },
   "Destinations": {
-    "view_plans": "Explorar experiencias →",
+    "view_plans": "Ver Tours →",
     "galapagos": {
-      "name": "Islas Galápagos",
-      "tag": "Naturaleza Auténtica",
-      "description": "Navega archipiélagos volcánicos prístinos y nada junto a las especies endémicas que inspiraron a Darwin. El paraíso salvaje garantizado."
+      "name": "Región Insular (Galápagos)",
+      "tag": "Naturaleza Pura",
+      "description": "El archipiélago encantado. Un laboratorio natural con especies únicas en el mundo."
     },
-    "quito": {
-      "name": "Quito Histórico",
-      "tag": "Patrimonio Cultural",
-      "description": "Recorre calles empedradas, cúpulas doradas y pisa la línea Ecuatorial. La capital colonial mejor conservada de los Andes."
+    "costa": {
+      "name": "Región Costa",
+      "tag": "Sol y Playa",
+      "description": "Extensas playas, clima tropical, manglares y gastronomía exquisita frente al Pacífico."
     },
-    "amazon": {
-      "name": "Selva Amazónica",
-      "tag": "Aventura Profunda",
-      "description": "Despierta entre la inmensidad verde en el corazón del Pulmón del Mundo. Expediciones inmersivas en el bosque lluvioso."
+    "sierra": {
+      "name": "Región Sierra",
+      "tag": "Ruta de los Volcanes",
+      "description": "Majestuosos nevados, ciudades coloniales y comunidades andinas llenas de historia."
     },
-    "banos": {
-      "name": "Baños de Agua Santa",
-      "tag": "Adrenalina Pura",
-      "description": "Desciende por cascadas atronadoras y relájate a los pies del volcán Tungurahua. La meca absoluta del turismo activo."
+    "oriente": {
+      "name": "Región Oriente",
+      "tag": "Selva Amazónica",
+      "description": "El corazón de la Amazonía. Biodiversidad inigualable y culturas ancestrales."
     }
   },
   "Hotels": {
@@ -62,6 +62,17 @@
     }
   },
   "Tours": {
+    "filter_all": "Todos los Tours",
+    "filter_galapagos": "Galápagos",
+    "filter_costa": "Costa",
+    "filter_sierra": "Sierra",
+    "filter_oriente": "Oriente",
+    "day_prefix": "Día ",
+    "price_from": "Desde {price} por persona",
+    "price_note": "*Precio referencial sujeto a disponibilidad*",
+    "ready_experience": "¿Listo para vivir esta experiencia?",
+    "whatsapp_inquire": "Consultar por WhatsApp",
+    "whatsapp_text": "Hola, estoy interesado en el plan:",
     "includes": "Incluye",
     "excludes": "No Incluye",
     "consult": "Consultar Plan",
@@ -70,6 +81,48 @@
     "modal_itinerary": "Itinerario por días",
     "modal_lodging": "Hospedaje asociado",
     "modal_activities": "Actividades principales",
+    "costa-sun": {
+      "name": "Ruta del Sol",
+      "duration": "4 Días / 3 Noches",
+      "description": "Relájate en las mejores playas del Pacífico y disfruta de la gastronomía costera.",
+      "inclusions": [
+        "Hospedaje frente al mar",
+        "Desayunos",
+        "Tour en yate"
+      ],
+      "exclusions": [
+        "Bebidas alcohólicas",
+        "Propinas"
+      ],
+      "lodging": "Hotel Ocean View o similar",
+      "activities": [
+        "Navegación",
+        "Snorkel",
+        "Ciclismo en la playa"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Llegada",
+          "description": "Recepción y tarde libre."
+        },
+        {
+          "day": "2",
+          "title": "Tour en yate",
+          "description": "Visita a las islas cercanas y snorkel."
+        },
+        {
+          "day": "3",
+          "title": "Día de Playa",
+          "description": "Actividades acuáticas y relajación."
+        },
+        {
+          "day": "4",
+          "title": "Retorno",
+          "description": "Despedida y retorno."
+        }
+      ]
+    },
     "galapagos-explorer": {
       "name": "Galápagos Explorer",
       "duration": "5 Días / 4 Noches",
@@ -231,6 +284,184 @@
           "day": "3",
           "title": "Relajación",
           "description": "Mañana en aguas termales antes de partir."
+        }
+      ]
+    },
+    "galapagos-luxury": {
+      "name": "Galápagos Primera Clase",
+      "duration": "8 Días / 7 Noches",
+      "description": "Exploración exhaustiva en crucero de expedición con todo el lujo y confort.",
+      "inclusions": [
+        "Crucero de Lujo",
+        "Pensión Completa",
+        "Equipo de Snorkel",
+        "Guía Naturalista Bilingüe"
+      ],
+      "exclusions": [
+        "Vuelos Domésticos",
+        "Tarjeta de Control de Tránsito",
+        "Entrada al Parque Nacional"
+      ],
+      "lodging": "Crucero Categoría Lujo",
+      "activities": [
+        "Desembarcos diarios",
+        "Kayak",
+        "Observación de vida marina profunda"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Embarque",
+          "description": "Llegada al aeropuerto y bienvenida en el yate."
+        },
+        {
+          "day": "2-7",
+          "title": "Navegación",
+          "description": "Visita a las islas del Oeste (Isabela, Fernandina)."
+        },
+        {
+          "day": "8",
+          "title": "Desembarque",
+          "description": "Visita final Centro Charles Darwin y vuelo de regreso."
+        }
+      ]
+    },
+    "costa-adventure": {
+      "name": "Surf y Ballenas",
+      "duration": "5 Días / 4 Noches",
+      "description": "Sumérgete en el Océano Pacífico, surfea olas perfectas y observa a las majestuosas ballenas jorobadas.",
+      "inclusions": [
+        "Hotel frente al mar",
+        "Desayunos",
+        "Tour de avistamiento",
+        "Clases de surf"
+      ],
+      "exclusions": [
+        "Comidas fuertes",
+        "Alquiler de traje de neopreno"
+      ],
+      "lodging": "Hostelería Ecológica Montañita",
+      "activities": [
+        "Surf",
+        "Avistamiento de Ballenas",
+        "Vida Nocturna"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Ruta Spondylus",
+          "description": "Traslado y check-in. Tarde de playa."
+        },
+        {
+          "day": "2",
+          "title": "Surf",
+          "description": "Clase intensiva de surf por la mañana."
+        },
+        {
+          "day": "3",
+          "title": "Ballenas",
+          "description": "Navegación al Parque Nacional Machalilla."
+        },
+        {
+          "day": "4",
+          "title": "Los Frailes",
+          "description": "Visita a playa virgen Los Frailes."
+        },
+        {
+          "day": "5",
+          "title": "Retorno",
+          "description": "Mañana libre y retorno a ciudad de origen."
+        }
+      ]
+    },
+    "cuenca-colonial": {
+      "name": "Cuenca y Cajas",
+      "duration": "4 Días / 3 Noches",
+      "description": "Disfruta de la Atenas del Ecuador y el misticismo natural del Parque Nacional Cajas.",
+      "inclusions": [
+        "Hotel Colonial",
+        "Desayunos Buffets",
+        "Traslados",
+        "City Tour Guiado"
+      ],
+      "exclusions": [
+        "Cenas",
+        "Propinas a guías locales"
+      ],
+      "lodging": "Hotel Victoria o equivalente",
+      "activities": [
+        "Caminata en Alta Montaña",
+        "Visita Museo Sombrero Paja Toquilla",
+        "Aguas Termales"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Bienvenida",
+          "description": "Check-in y paseo nocturno por el río Tomebamba."
+        },
+        {
+          "day": "2",
+          "title": "City Tour",
+          "description": "Catedrales, ruinas de Pumapungo y mirador Turi."
+        },
+        {
+          "day": "3",
+          "title": "Parque Nacional Cajas",
+          "description": "Senderismo por lagunas de origen glaciar."
+        },
+        {
+          "day": "4",
+          "title": "Despedida",
+          "description": "Últimas compras de artesanías y traslado al aeropuerto."
+        }
+      ]
+    },
+    "yasuni-deep": {
+      "name": "Profundidades del Yasuní",
+      "duration": "5 Días / 4 Noches",
+      "description": "La mayor biodiversidad del mundo te espera. Visita saladeros de loros y lagunas negras.",
+      "inclusions": [
+        "Lodge Selva Adentro",
+        "Pensión Completa",
+        "Botas de goma",
+        "Guía Nativo y Naturalista"
+      ],
+      "exclusions": [
+        "Tasa de embarque Coca",
+        "Gastos personales"
+      ],
+      "lodging": "Sacha Lodge o Napo Wildlife",
+      "activities": [
+        "Saladero de loros",
+        "Caminata nocturna",
+        "Avistamiento de caimanes"
+      ],
+      "itinerary": [
+        {
+          "day": "1",
+          "title": "Río Napo",
+          "description": "Navegación profunda de 2 horas en lancha rápida."
+        },
+        {
+          "day": "2",
+          "title": "Saladeros",
+          "description": "Visita matutina a pared de arcilla y loros."
+        },
+        {
+          "day": "3",
+          "title": "Torre del Dosel",
+          "description": "Observación de aves a 40 metros de altura."
+        },
+        {
+          "day": "4",
+          "title": "Laguna Añangu",
+          "description": "Paseo a remo por humedales y observación de monos."
+        },
+        {
+          "day": "5",
+          "title": "Retorno",
+          "description": "Navegación temprana hacia el aeropuerto del Coca."
         }
       ]
     }

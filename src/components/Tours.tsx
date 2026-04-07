@@ -6,18 +6,32 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { tours } from '@/data/tours';
 import { Clock, CheckCircle2, XCircle, ChevronRight, MapPin, Activity, Bed, MessageCircle, X } from 'lucide-react';
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 
 export default function Tours() {
   const t = useTranslations('Tours');
   const tHome = useTranslations('HomePage');
   const locale = useLocale();
+  const searchParams = useSearchParams();
   const [selectedTour, setSelectedTour] = useState<typeof tours[0] | null>(null);
+  const [activeRegion, setActiveRegion] = useState('all');
+
+  useEffect(() => {
+    const region = searchParams.get('region');
+    if (region && ['galapagos', 'costa', 'sierra', 'oriente'].includes(region)) {
+      setActiveRegion(region);
+    }
+  }, [searchParams]);
+
+  const filteredTours = activeRegion === 'all' 
+    ? tours 
+    : tours.filter(t => t.destinationId === activeRegion);
 
   const getPriceText = (price: number) => {
     const formattedPrice = price.toLocaleString('en-US');
-    return locale === 'en' ? `From $${formattedPrice} per person` : `Desde $${formattedPrice} por persona`;
+    return t('price_from', { price: formattedPrice });
   };
-  const priceNote = locale === 'en' ? "*Price subject to availability*" : "*Precio referencial sujeto a disponibilidad*";
+  const priceNote = t('price_note');
 
   // Prevent scroll when modal is open
   useEffect(() => {
@@ -44,10 +58,29 @@ export default function Tours() {
           <div className="w-24 h-1 bg-brand-blue mx-auto rounded-full" />
         </div>
 
+        {/* Filter Tabs */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
+          {['all', 'galapagos', 'costa', 'sierra', 'oriente'].map((region) => (
+            <button
+              key={region}
+              onClick={() => setActiveRegion(region)}
+              className={`px-6 py-2.5 rounded-full font-bold text-sm sm:text-base transition-all duration-300 ${
+                activeRegion === region
+                  ? 'bg-brand-blue text-white shadow-lg shadow-brand-blue/30 scale-105'
+                  : 'bg-white text-slate-600 hover:bg-slate-100 hover:scale-105 border border-slate-200'
+              }`}
+            >
+              {t(`filter_${region}`)}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 gap-12">
-          {tours.map((tour, index) => (
-            <motion.div
-              id={`tour-${tour.destinationId}`}
+          <AnimatePresence mode="popLayout">
+            {filteredTours.map((tour, index) => (
+              <motion.div
+                layout
+                id={`tour-${tour.id}`}
               key={tour.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -116,8 +149,9 @@ export default function Tours() {
                   <ChevronRight className="w-5 h-5" />
                 </button>
               </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
 
@@ -186,8 +220,8 @@ export default function Tours() {
                       {(t.raw(`${selectedTour.id}.itinerary`) as any[]).map((dayData, i) => (
                         <div key={i} className="flex gap-4">
                           <div className="flex flex-col items-center">
-                            <div className="w-10 h-10 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold shrink-0">
-                              D{dayData.day}
+                            <div className="w-12 h-12 rounded-full bg-brand-blue/10 text-brand-blue flex items-center justify-center font-bold text-sm shrink-0">
+                              {t('day_prefix')}{dayData.day}
                             </div>
                             {i < (t.raw(`${selectedTour.id}.itinerary`) as any[]).length - 1 && (
                               <div className="w-0.5 h-full bg-slate-100 my-2" />
@@ -261,7 +295,7 @@ export default function Tours() {
 
               <div className="p-5 sm:p-8 border-t border-slate-100 bg-white flex flex-col md:flex-row gap-6 items-center justify-between shrink-0 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.05)] z-10">
                 <p className="text-lg text-slate-800 font-black text-center md:text-left tracking-tight">
-                  {locale === 'en' ? "Ready to live this experience?" : "¿Listo para vivir esta experiencia?"}
+                  {t('ready_experience')}
                 </p>
                 <div className="flex flex-col-reverse sm:flex-row gap-3 w-full md:w-auto">
                   <button
@@ -271,13 +305,13 @@ export default function Tours() {
                     {t('close')}
                   </button>
                   <a
-                    href={`https://wa.me/593991234567?text=${locale === 'en' ? 'Hello, I am interested in the plan:' : 'Hola, estoy interesado en el plan:'} ${t(`${selectedTour.id}.name`)}`}
+                    href={`https://wa.me/593991234567?text=${t('whatsapp_text')} ${t(`${selectedTour.id}.name`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] text-white font-extrabold rounded-xl hover:bg-[#20bd5a] transition shadow-xl shadow-[#25D366]/30 hover:-translate-y-1"
                   >
                     <MessageCircle className="w-6 h-6" />
-                    {locale === 'en' ? 'Inquire via WhatsApp' : 'Consultar por WhatsApp'}
+                    {t('whatsapp_inquire')}
                   </a>
                 </div>
               </div>
