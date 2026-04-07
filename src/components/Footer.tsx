@@ -22,9 +22,9 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-4">{t('links')}</h3>
           <ul className="space-y-3">
-            <li><Link href="#about" className="hover:text-brand-blue transition">{tHome('about')}</Link></li>
-            <li><Link href="#destinations" className="hover:text-brand-blue transition">{tHome('destinations')}</Link></li>
-            <li><Link href="#tours" className="hover:text-brand-blue transition">{tHome('tours')}</Link></li>
+            <li><Link href="/#about" className="hover:text-brand-blue transition">{tHome('about')}</Link></li>
+            <li><Link href="/#destinations" className="hover:text-brand-blue transition">{tHome('destinations')}</Link></li>
+            <li><Link href="/tours" className="hover:text-brand-blue transition">{tHome('tours')}</Link></li>
           </ul>
         </div>
 

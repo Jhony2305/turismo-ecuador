@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import { Link } from '@/i18n/routing';
 import { Compass, ShieldCheck, HeartPulse } from 'lucide-react';
 
 export default function About() {
@@ -75,9 +76,9 @@ export default function About() {
           className="mt-20 text-center"
         >
           <p className="text-2xl font-black text-slate-800 mb-6 drop-shadow-sm">{t('cta')}</p>
-          <a href="#destinations" className="inline-block px-10 py-4 bg-slate-900 text-white font-extrabold rounded-xl hover:bg-brand-blue transition shadow-xl hover:-translate-y-1">
+          <Link href="/#destinations" className="inline-block px-10 py-4 bg-slate-900 text-white font-extrabold rounded-xl hover:bg-brand-blue transition shadow-xl hover:-translate-y-1">
             {t('cta_button')}
-          </a>
+          </Link>
         </motion.div>
 
       </div>

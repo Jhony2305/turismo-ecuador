@@ -2,6 +2,7 @@
 
 import {useTranslations} from 'next-intl';
 import {motion} from 'framer-motion';
+import {Link} from '@/i18n/routing';
 
 export default function Hero() {
   const t = useTranslations('HomePage');
@@ -52,12 +53,12 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "backOut" }}
           className="flex flex-col sm:flex-row justify-center gap-6"
         >
-          <a href="#destinations" className="px-10 py-4 bg-brand-green text-white font-bold rounded-full hover:bg-brand-green-dark transition shadow-[0_0_30px_-5px_var(--color-brand-green)] hover:-translate-y-1 text-lg">
+          <Link href="/#destinations" className="px-10 py-4 bg-brand-green text-white font-bold rounded-full hover:bg-brand-green-dark transition shadow-[0_0_30px_-5px_var(--color-brand-green)] hover:-translate-y-1 text-lg">
             {t('destinations')}
-          </a>
-          <a href="#tours" className="px-10 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 font-bold rounded-full hover:bg-white/20 transition shadow-xl hover:-translate-y-1 text-lg">
+          </Link>
+          <Link href="/tours" className="px-10 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 font-bold rounded-full hover:bg-white/20 transition shadow-xl hover:-translate-y-1 text-lg">
             {t('tours')}
-          </a>
+          </Link>
         </motion.div>
       </div>
       
